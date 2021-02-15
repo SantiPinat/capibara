@@ -1,0 +1,51 @@
+.navbar {
+    button {
+        background-color: $primary;
+        .navbar-toggler-icon {
+            color: $octonary;
+        }
+    }
+    ul {
+        margin-left:4rem;
+        li {
+            margin: 0rem .5rem;
+            a{
+                color: $primary;
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            a:focus{
+                color:$quinary;
+                border-bottom: solid 3px $quinary;
+            }
+            a:hover{
+                color:$quinary;
+                border-bottom: solid 3px $quinary;
+            }
+            ul {
+                color:$primary;
+                background-color: $octonary;  
+                li {
+                    a{
+                        color: $primary;
+                        font-size: 1rem;
+                        font-weight: 600;
+                    }
+                    a:focus{
+                        color:$quinary;
+                        border-bottom: solid 3px $quinary;
+                    }
+                    a:hover{
+                        color:$quinary;
+                        border-bottom: solid 3px $quinary;
+                    }
+                    a:active{
+                        text-decoration: none;
+                        background-color:$octonary;                          
+                    }
+                }                  
+            }
+        }
+    }
+}
