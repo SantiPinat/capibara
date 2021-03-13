@@ -1,0 +1,83 @@
+main {
+    section {
+        .containerimg {
+            background: url(../../assets/img/leaf1.png), url(../../assets/img/leaf2.png);
+            background-repeat: no-repeat, no-repeat;
+            background-position:  right ,  left;
+            background-size: 10rem;
+            h1 {
+                color: $primary;
+                font-size: 4rem;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            h2 {
+                color: $primary;
+                @include capi;;
+                font-size: 2.5rem;
+                padding-bottom: 1.5rem;
+                text-align: center;
+            }
+        }
+    }
+    .carousel {
+        max-height: 500px;
+        img {
+            height: 500px;
+            object-fit:cover;
+        }
+    }
+    .ourhistory {
+        background-color: #ffffff;
+        background-image: url('../../assets/img/justicia.jpg'), url('../../assets/img/team2.jpg'),;
+        background-size: 150px, 300px;
+        background-position: 25% 0%, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        text-align: center;
+        .historytitle {
+            color: $primary;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 4rem;
+            padding-top: 3rem;
+        }
+        p { 
+            color: $primary;
+            letter-spacing: 1px;
+            line-height: 2rem;
+            margin: 0rem 1rem;
+            padding-right: 5rem;
+            text-align: left;
+            span {
+                @include capi;
+            }
+        }
+        hr {
+            background-color: $primary;
+            display: inline-block;
+            height: 5px;
+            opacity: 1;
+            width: 30%;
+       }
+    }
+    .agreements {
+        background-color: #ffffff;
+        h3 {
+            font-weight: bold;
+            font-size: 2rem;
+            color: $primary;
+            text-align: center;
+        }
+        .imgcontainer {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                max-height: 120px;
+                width: auto;
+            }
+        }
+    }
+}

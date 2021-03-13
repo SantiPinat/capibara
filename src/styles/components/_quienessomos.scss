@@ -1,0 +1,50 @@
+section {
+    .somos {
+        background: url(../../assets/img/team1.png), url(../../assets/img/eviorement.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: -2% -50% ,  bottom right;
+        background-size: 16rem, 17rem;
+        .textoquienes {           
+            color: $primary;
+            padding: 1rem 7rem;
+            h3 {
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            p {
+                letter-spacing: 1px;
+                .capi {
+                    @include capi;
+                }
+            }
+            a {
+                background-color: $senary;
+            }
+        }
+    }
+    .manifiesto {
+        background: url(../../assets/img/derecho1.png), url(../../assets/img/leaf3.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top right , bottom left;
+        background-size: 22rem, 30rem;
+        .textomanifiesto {
+            color: $primary;
+            letter-spacing: 1px;
+            h3{
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+            }
+            p{
+                line-height: 22px;
+                padding: 1rem 20rem 1rem 0rem;
+                .capi {
+                    @include capi;
+                }
+            }
+            ul {
+                padding: 1rem 1rem 0rem 20rem;
+            }
+        }
+    }
+}

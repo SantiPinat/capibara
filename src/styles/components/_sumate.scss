@@ -1,0 +1,31 @@
+.sumatemain {
+    background-image: url(../../assets/img/team.png);
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    background-size: 40rem;
+    padding-bottom: 3rem;
+    .sumate {
+        color: $primary;
+        h3 {
+            font-weight: bolder;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        hr {
+            height: 3px;
+            color: black;
+            width: 50%;
+        }
+        p {        
+            .capi{
+                @include capi;
+            }
+            letter-spacing: 1.5px;
+        }
+        em {
+            font-weight: bold;
+            font-style: unset;
+            text-transform: uppercase;
+        }
+    }
+}

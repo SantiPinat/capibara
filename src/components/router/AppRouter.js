@@ -5,23 +5,34 @@ import {
     Route,
     Link
   } from 'react-router-dom';
-import { Contacto } from '../contacto/Contacto';
 import { Home } from '../home/Home'
 import { CentroEstudios } from '../centroestudios/CentroEstudios'
-import { LineasDeAccion } from '../lineasdeaccion/LineasDeAccion'
-import { LineasTematicas } from '../lineastematicas/LineasTematicas'
 import { sumate } from '../sumate/Sumate'
 import { QuieneSomos } from '../quienessomos/QuienesSomos'
 import { Footer } from '../footer/Footer'
 import logocapibara from '../../assets/img/logocapibara.png'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faStream} from '@fortawesome/free-solid-svg-icons'
+import { Extractivismo } from '../lineastematicas/Extractivismo';
+import { CambioClimatico } from '../lineastematicas/CambioClimatico';
+import { AmbienteUrbano } from '../lineastematicas/AmbienteUrbano';
+import { LitigioEstrategico } from '../lineasdeaccion/LitigioEstrategico';
+import { Derechos } from '../lineastematicas/Derechos';
+import { Legislacion } from '../lineasdeaccion/Legislacion';
+import { Vinculacion } from '../lineasdeaccion/Vinculacion';
+import { Investigacion } from '../lineasdeaccion/Investigacion';
+import { Educacion } from '../lineasdeaccion/Educacion';
+import { Documentos } from '../publicaciones/Documentos';
+import { Memorias } from '../publicaciones/Memorias';
+
 
 export const AppRouter = () => {
     return (
         <Router>
-        <div className="AppRouter__main">
-          <div className="container">
-            <nav className="navbar navbar-expand-sm">
-                    <Link className="navbar-brand" to="/home">
+        <div>
+          <div className="AppRouter__main">
+            <nav className="container-fluid fixed-top navbar navbar-expand-lg" >
+                    <Link className="navbar-brand" to="/">
                         <img src={logocapibara} alt="logo de capipabara nds" height="100px"/>
                     </Link>
                     <button className="navbar-toggler" 
@@ -31,33 +42,56 @@ export const AppRouter = () => {
                     aria-controls="navbarSupportedContent" 
                     aria-expanded="false" 
                     aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        <FontAwesomeIcon icon={faStream} /> 
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Quiénes somos
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><Link className="dropdown-item" to="/quienessomos">Quienes somos</Link></li>
+                          <li><a className="dropdown-item" to="/quienessomos" href="#equipo">Equipo</a></li>
+                          <li><a className="dropdown-item" to="/quienessomos" href="#manifiesto">Nuestro manifiesto</a></li>                        </ul>
+                      </li>
                       <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/quienessomos">Quiénes somos</Link>
+                        <Link className="nav-link" to="/centroestudios">Centro de estudios</Link>
                       </li>
                       <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Nuestro trabajo
+                          Líneas temáticas
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><Link className="dropdown-item" to="/lineastematicas">Líneas temáticas</Link></li>
-                          <li><Link className="dropdown-item" to="/lineasdeaccion">Líneas de acción</Link></li>
+                          <li><Link className="dropdown-item" to="/extractivismo">Extractivismo</Link></li>
+                          <li><Link className="dropdown-item" to="/cambioclimatico">Cambio climático</Link></li>
+                          <li><Link className="dropdown-item" to="/ambienteurbano">Ambiente urbano</Link></li>
+                          <li><Link className="dropdown-item" to="/derechos">Derechos de la naturaleza y biodiversidad</Link></li>
+                        </ul>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Líneas de Acción
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><Link className="dropdown-item" to="/litigioestrategico">Litigio estratégico</Link></li>
+                          <li><Link className="dropdown-item" to="/legislacion">Legislación y políticas públicas</Link></li>
+                          <li><Link className="dropdown-item" to="/vinculacion">Vinculación institucional</Link></li>
+                          <li><Link className="dropdown-item" to="/investigacion">Invesstigación para la incedencia</Link></li>
+                          <li><Link className="dropdown-item" to="/educacion">Educación ambiental y capacitación</Link></li>
+                        </ul>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Publicaciones
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><Link className="dropdown-item" to="/memorias">Memorias</Link></li>
+                          <li><Link className="dropdown-item" to="/documentos">Documentos</Link></li>
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="/centroestudios">Centro de Estudios</Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link disabled" href="#instituto" tabIndex="-1" aria-disabled="true">Instituto</Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/sumate">Sumate!</Link>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#contacto">Contacto</a>
+                        <Link className="nav-link" to="/sumate">¡Sumate!</Link>
                       </li>
                     </ul>
                 </div>
@@ -68,14 +102,20 @@ export const AppRouter = () => {
             <Route exact path="/" component={ Home }/>  
             <Route exact path="/quienessomos" component={ QuieneSomos }/>
             <Route exact path="/centroestudios" component={ CentroEstudios }/>
-            <Route exact path="/lineasdeaccion" component={ LineasDeAccion }/>
-            <Route exact path="/lineastematicas" component={ LineasTematicas }/>
             <Route exact path="/sumate" component={ sumate }/>
-            <Route exact path="/contacto" component={ Contacto }/>
-            <Route exact path="/home" component={ Home }/>
+            <Route exact path="/extractivismo" component={ Extractivismo }/>
+            <Route exact path="/cambioclimatico" component={ CambioClimatico }/>
+            <Route exact path="/ambienteurbano" component={ AmbienteUrbano }/>
+            <Route exact path="/derechos" component={ Derechos }/>
+            <Route exact path="/litigioestrategico" component={ LitigioEstrategico }/>
+            <Route exact path="/legislacion" component={ Legislacion }/>
+            <Route exact path="/vinculacion" component={ Vinculacion }/>
+            <Route exact path="/investigacion" component={ Investigacion }/>
+            <Route exact path="/educacion" component={ Educacion }/>
+            <Route exact path="/documentos" component={ Documentos }/>
+            <Route exact path="/memorias" component={ Memorias }/>
           </Switch>
 
-          <Contacto />
           <Footer />
         </div>
       </Router>

@@ -8,3 +8,9 @@ $senary: #819e80;
 $septenary: #d5ac36;
 $octonary: #F7F9F9;
 $nonary: #839192;
+
+// mixins
+@mixin capi {
+        font-family: 'Architects Daughter', cursive ;
+        font-weight: bold;
+}

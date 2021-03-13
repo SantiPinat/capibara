@@ -1,0 +1,21 @@
+.institutomain {
+    background-image: url(../../assets/img/acuerdos.png), url(../../assets/img/leaf4.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px , 250px;
+    background-position: 100% -10%, 0% 90%;
+    .instituto {
+        color: $primary;
+        padding-right: 17rem;
+        h3 {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p {
+            letter-spacing: .5px;
+            line-height: 25px;
+        }
+    }
+    .institutolist {
+        padding: 2rem 2rem 2rem 15rem;
+    }
+}

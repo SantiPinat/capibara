@@ -1,0 +1,33 @@
+.contactomain {
+    .contacto {
+        color: $primary;
+        margin-bottom: 1rem;
+        font-weight: bolder;
+        h2 { 
+            font-size: 2rem;
+            text-align: center;
+            @include capi;
+        }
+        hr {
+            height: 4px;
+            width: 50%;
+            background-color: $primary;
+        }
+        p {
+            letter-spacing: .5px;
+            .icon {
+                margin-right: .5rem;
+            }
+        }
+        form {
+            .escribinos {
+                height: 150px;
+            }
+            button {
+                background-color:$senary;
+                font-weight: bold;
+                color: $octonary;
+            }
+        }
+    }
+}
