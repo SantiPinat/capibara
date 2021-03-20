@@ -1,0 +1,19 @@
+.widgettweet{
+    margin: 2rem;
+    text-align: center;
+    color: $primary;
+    a{
+        @include capi;
+        text-decoration: none;
+        color: $primary;
+
+    }
+    .noticias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .tweet{
+            width: 800px;
+        }
+    }
+}

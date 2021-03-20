@@ -22,6 +22,26 @@ section {
             }
         }
     }
+    .equipo {
+        h2 {
+            color:$primary;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .imgcontainer {
+            display: flex;
+            flex-flow:row wrap;
+            list-style: none;
+            justify-content: space-around;
+            li {
+                height: 200px;
+                img {
+                    width: 200px;
+                }
+            }
+        }
+    }
     .manifiesto {
         background: url(../../assets/img/derecho1.png), url(../../assets/img/leaf3.png);
         background-repeat: no-repeat, no-repeat;

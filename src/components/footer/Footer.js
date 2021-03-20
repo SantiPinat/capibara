@@ -9,10 +9,12 @@ export const Footer = () => {
     return (
         <footer className="container-fluid">
             <div className="social">
-                <a href="https://www.facebook.com/Capibara.NDS" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="iconfb" icon={faFacebook}  /></a>
-                <a href="https://twitter.com/capibarands" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icontw" icon={faTwitter}  /></a>
-                <a href="https://www.instagram.com/capibarands" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="iconig" icon={faInstagram}  /></a>
-                <a href="https://www.youtube.com/channel/UCMUTKoy7YgS_bEAEKmPV70g" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="iconyt" icon={faYoutube}  /></a>
+                <ul>
+                    <li><a href="https://www.facebook.com/Capibara.NDS" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fbicon" icon={faFacebook}/></a></li>
+                    <li><a href="https://twitter.com/capibarands" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="twicon" icon={faTwitter}/></a></li>
+                    <li><a href="https://www.instagram.com/capibarands" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="igicon" icon={faInstagram}/></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCMUTKoy7YgS_bEAEKmPV70g" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="yticon" icon={faYoutube}/></a></li>
+                </ul>
             </div>
             <div className="titles">
                 <h3>Copyright © Asociación Civil CAPIBARA Naturaleza, Derecho y Sociedad 2021</h3> 

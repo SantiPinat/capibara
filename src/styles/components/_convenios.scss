@@ -1,0 +1,20 @@
+.agreements {
+    padding: 2rem 0rem;
+    background-color: #ffffff;
+    h3 {
+        font-weight: bold;
+        font-size: 2rem;
+        color: $primary;
+        text-align: center;
+    }
+    .imgcontainer {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            max-height: 120px;
+            width: auto;
+        }
+    }
+}
