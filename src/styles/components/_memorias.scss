@@ -1,0 +1,18 @@
+.memorias {
+    background-color: $octonary;
+    @include lines;
+    h4{
+        span {
+            @include capi;
+        }
+    }
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 1rem;
+            a{
+                display: inline;
+            }
+        }
+    }
+}
