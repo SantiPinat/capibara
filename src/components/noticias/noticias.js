@@ -10,7 +10,7 @@ export const Noticias = () => {
             <div className="noticias">
                 <div className="tweet">
                     <TwitterTimelineEmbed
-                    sourceType="capibarands"
+                    sourceType="profile"
                     screenName="capibarands"
                     theme="dark"
                     options={{height: 500}}
