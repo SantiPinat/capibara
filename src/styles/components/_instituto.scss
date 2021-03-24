@@ -2,7 +2,7 @@
     background-image: url(../../assets/img/acuerdos.png), url(../../assets/img/leaf4.png);
     background-repeat: no-repeat, no-repeat;
     background-size: 300px , 250px;
-    background-position: 100% -10%, 0% 90%;
+    background-position: 100% -10%, 0% 60%;
     .instituto {
         color: $primary;
         padding-right: 17rem;
@@ -14,15 +14,57 @@
         p {
             font-size: 1rem;
             letter-spacing: 1px;
-            line-height: 25px;
         }
         @include media(xs){
-            padding: 0rem;
+            padding: 1rem;
+        }
+        @include media(sm){
+            padding: 1rem;
         }
     }
     .institutolist {
-        
         color: $primary;
+        font-size: 1rem;
         padding: 2rem 2rem 2rem 15rem;
+        @include media(xs){
+            padding: 7rem 1rem 1rem;
+        }
+        @include media(sm){
+            padding: 7rem 1rem 1rem;
+        }
+    }
+    .imgcont{
+        margin-bottom: 2rem;
+        text-align: center;
+        img {
+            width: 50%;
+            @include media(xs){
+                width: 80%;
+            }
+        }
+    }
+    @include media(xs){
+        background-image: url(../../assets/img/leaf4.png);
+        background-repeat: no-repeat;
+        background-size: 10rem;
+        background-position: 50% 54%;
+    }
+    @include media(sm){
+        background-image: url(../../assets/img/leaf4.png);
+        background-repeat: no-repeat;
+        background-size: 10rem;
+        background-position: 50% 54%;
+    }
+    @include media(md){
+        background-image: url(../../assets/img/acuerdos.png), url(../../assets/img/leaf4.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 15rem , 15rem;
+        background-position: 100% 0%, 0% 80%;
+    }
+    @include media(lg){
+        background-image: url(../../assets/img/acuerdos.png), url(../../assets/img/leaf4.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 20rem , 20rem;
+        background-position: 100% 0%, 0% 80%;
     }
 }

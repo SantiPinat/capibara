@@ -11,6 +11,9 @@ section {
                 font-weight: 600;
                 text-transform: uppercase;
                 margin-bottom: 1rem;
+                @include media(lg){
+                    text-align: center;
+                }
             }
             p {
                 letter-spacing: 2px;
@@ -26,8 +29,25 @@ section {
                         font-weight: bold;
                         margin-top:5rem;
                     }
+                    @include media(sm){
+                        font-weight: bold;
+                        margin-top:5rem;
+                    }
+                    @include media(md){
+                        font-weight: bold;
+                        margin-top:5rem;
+                    }
                 }
                 @include media(xs){
+                    text-align: left;
+                }
+                @include media(sm){
+                    text-align: left;
+                }
+                @include media(md){
+                    text-align: left;
+                }
+                @include media(lg){
                     text-align: left;
                 }
             }
@@ -35,11 +55,38 @@ section {
                 padding: 8rem 2rem;
                 margin-bottom: 2rem;
             }
+            @include media(sm){
+                padding: 8rem 2rem;
+                margin-bottom: 2rem;
+            }
+            @include media(md){
+                padding: 6rem 2rem;
+                margin-bottom: 2rem;
+            }
+            @include media(lg){
+                padding: 6rem 1rem;
+                margin-bottom: 2rem;
+            }
         }
         @include media(xs){
             background-repeat: no-repeat, no-repeat;
             background-position: 50% -3% ,  100% 95%;
             background-size: 11rem, 11rem;
+        }
+        @include media(sm){
+            background-repeat: no-repeat, no-repeat;
+            background-position: 50% -3% ,  100% 95%;
+            background-size: 12rem, 12rem;
+        }
+        @include media(md){
+            background-repeat: no-repeat, no-repeat;
+            background-position: 100% -5% ,  bottom center;
+            background-size: 13rem, 12rem;
+        }
+        @include media(lg){
+            background-repeat: no-repeat, no-repeat;
+            background-position: 100% -10% ,  bottom center;
+            background-size: 13rem, 12rem;
         }
     }
     .equipo {
@@ -106,9 +153,21 @@ section {
                 padding: 2rem;
                 margin-bottom: 12rem;
                 }
+                @include media(sm){
+                    padding: 2rem;
+                    margin-bottom: 12rem;
+                }
             }
             ul {
                 @include media(xs){
+                    padding: 2rem;
+                    margin-bottom: 10rem;
+                }
+                @include media(sm){
+                    padding: 2rem;
+                    margin-bottom: 10rem;
+                }
+                @include media(md){
                     padding: 2rem;
                     margin-bottom: 10rem;
                 }
@@ -118,6 +177,25 @@ section {
             background: url(../../assets/img/derecho1.png),url(../../assets/img/leaf3.png) ;
             background-repeat: no-repeat, no-repeat ;
             background-position: bottom, 50% 35%;
-            background-size: 14rem, 15rem;        }
+            background-size: 14rem, 15rem;        
+        }
+        @include media(sm){
+            background: url(../../assets/img/derecho1.png),url(../../assets/img/leaf3.png) ;
+            background-repeat: no-repeat, no-repeat ;
+            background-position: bottom, 50% 35%;
+            background-size: 14rem, 15rem;        
+        }
+        @include media(md){
+            background: url(../../assets/img/derecho1.png),url(../../assets/img/leaf3.png) ;
+            background-repeat: no-repeat, no-repeat ;
+            background-position: bottom, 150% 10%;
+            background-size: 14rem, 25rem;        
+        }
+        @include media(lg){
+            background: url(../../assets/img/derecho1.png),url(../../assets/img/leaf3.png) ;
+            background-repeat: no-repeat, no-repeat ;
+            background-position: 10% 90%, 40% 20%;
+            background-size: 20rem, 25rem;     
+        }
     }
 }

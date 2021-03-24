@@ -40,7 +40,7 @@ export const AppRouter = () => {
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" 
                     aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" 
+                    aria-expanded="true" 
                     aria-label="Toggle navigation">
                         <FontAwesomeIcon icon={faStream} /> 
                     </button>

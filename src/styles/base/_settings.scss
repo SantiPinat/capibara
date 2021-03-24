@@ -16,7 +16,6 @@ $nonary: #839192;
 }
 @mixin lines {
         color: $primary;
-        margin: 2rem;
         height: 400px;
         h4 {
             font-size: 2rem;
@@ -26,21 +25,29 @@ $nonary: #839192;
 }
 
 $breakpoint-xs: 360px;
-$breakpoint-sm: 767px;
-$breakpoint-md: 1023px;
-$breakpoint-lg: 1360px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
 
 @mixin media($media) {
   @if $media == xs {
-    @media (max-width: $breakpoint-sm) { @content; }
+    @media (max-width: $breakpoint-xs) { @content; }
   }
   @else if $media == sm {
-    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+    @media (min-width: $breakpoint-xs+1) and (max-width: $breakpoint-sm) { @content; }
   }
   @else if $media == md {
-    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+    @media (min-width: $breakpoint-sm+1) and (max-width: $breakpoint-md) { @content; }
   }
   @else if $media == lg {
-    @media (min-width: $breakpoint-lg) { @content; }
+    @media (min-width: $breakpoint-md+1) and (max-width: $breakpoint-lg){ @content; }
+  }
+  @else if $media == xl {
+    @media (min-width: $breakpoint-lg+1) and (max-width: $breakpoint-xl){ @content; }
+  } 
+  @else if $media == xxl {
+    @media (min-width: $breakpoint-xl+1) { @content; }
   }
 }

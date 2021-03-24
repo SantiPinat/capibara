@@ -1,7 +1,7 @@
 .sumatemain {
     background-image: url(../../assets/img/team.png);
     background-repeat: no-repeat;
-    background-position: 110% 100%;
+    background-position: 100% 200%;
     background-size: 40rem;
     padding-bottom: 3rem;
     .sumate {
@@ -16,16 +16,55 @@
             color: black;
             width: 50%;
         }
-        p {        
+        .separte {        
             .capi{
                 @include capi;
             }
             letter-spacing: 1.5px;
         }
-        em {
+        .depo {
             font-weight: bold;
             font-style: unset;
             text-transform: uppercase;
         }
+        
+        @include media(xs){
+            margin-bottom:15rem;
+        }
+        @include media(sm){
+            margin-bottom:15rem;
+        }
+        @include media(md){
+            margin-bottom:15rem;
+            padding: 0rem;
+        }
+        @include media(lg){
+            margin-bottom:15rem;
+            padding: 0rem;
+        }
+    }
+    @include media(xs){
+        background-repeat: no-repeat;
+        background-position:bottom;
+        background-size: 40rem;
+        padding-bottom: 3rem;
+    }
+    @include media(sm){
+        background-repeat: no-repeat;
+        background-position:bottom;
+        background-size: 40rem;
+        padding-bottom: 3rem;
+    }
+    @include media(md){
+        background-repeat: no-repeat;
+        background-position:bottom;
+        background-size: 40rem;
+        padding-bottom: 3rem;
+    }
+    @include media(lg){
+        background-repeat: no-repeat;
+        background-position:bottom;
+        background-size: 40rem;
+        padding-bottom: 3rem;
     }
 }

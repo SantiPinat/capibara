@@ -6,6 +6,9 @@
         font-weight: bold;
     }
     img {
-        width:100%;
+        width:70%;
+        @include media (xs){
+            width: 100%;
+        }
     }
 }

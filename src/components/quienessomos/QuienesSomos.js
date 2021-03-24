@@ -113,7 +113,7 @@ export const QuieneSomos = () => {
       <article className="manifiesto container" id="manifiesto">
         <div className="textomanifiesto row">
           <h3>Nuestro Manifiesto</h3>
-          <p className="col">
+          <p className="col-sm">
             En <span className="capi">CAPIBARA</span> hemos construido y
             consolidado algunos acuerdos que son la base subyacente e
             inspiradora de nuestras propuestas. En primer lugar, la necesidad de
@@ -131,7 +131,7 @@ export const QuieneSomos = () => {
             como todo proyecto en construcción, es imprescindible no cerrarlo,
             ni cristalizarlo:
           </p>
-          <ul className="col">
+          <ul className="col-sm">
             <li>
               Construir documentos de difusión y publicaciones sobre el tema de
               los derechos de la naturaleza y de los animales no humanos así

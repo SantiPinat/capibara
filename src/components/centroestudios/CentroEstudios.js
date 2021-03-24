@@ -1,4 +1,5 @@
 import React from 'react'
+import berta from '../../assets/img/bertacaceres.png'
 
 export const CentroEstudios = () => {
     return (
@@ -33,6 +34,9 @@ export const CentroEstudios = () => {
                     La realización de jornadas, talleres, capacitaciones, charlas, seminarios de discusión, ciclos de cine y/o documentales, muestras fotográficas, debates públicos.
                     </li>
                 </ol>  
+            </div>
+            <div className="container imgcont">
+                <img src={berta} alt="Logo Centro de estudios Berta Caceres"/>
             </div>
         </section>
     )

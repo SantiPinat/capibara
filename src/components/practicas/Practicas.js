@@ -9,8 +9,8 @@ import practicagrupal from '../../assets/img/practicagrupal.jpg'
 
 export const Practicas = () => {
     return (
-        <div>
             <article className="practices">
+              <div className="container">
                 <h2>Integrantes de nuestras practicas</h2>
                 <div className="card-columns"> 
                   <div className="row justify-content-center row-cols-auto ">
@@ -88,7 +88,7 @@ export const Practicas = () => {
                     </div>
                   </div>
                 </div>
+              </div>
             </article>
-        </div>
     )
 }
