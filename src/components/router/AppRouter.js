@@ -7,7 +7,7 @@ import {
   } from 'react-router-dom';
 import { Home } from '../home/Home'
 import { CentroEstudios } from '../centroestudios/CentroEstudios'
-import { sumate } from '../sumate/Sumate'
+import { Sumate } from '../sumate/Sumate'
 import { QuieneSomos } from '../quienessomos/QuienesSomos'
 import { Footer } from '../footer/Footer'
 import logocapibara from '../../assets/img/logocapibara.png'
@@ -27,6 +27,7 @@ import { Memorias } from '../publicaciones/Memorias';
 
 
 export const AppRouter = () => {
+
     return (
         <Router>
         <div>
@@ -52,8 +53,9 @@ export const AppRouter = () => {
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><Link className="dropdown-item" to="/quienessomos">Quienes somos</Link></li>
-                          <li><a className="dropdown-item" to="/quienessomos" href="#equipo">Equipo</a></li>
-                          <li><a className="dropdown-item" to="/quienessomos" href="#manifiesto">Nuestro manifiesto</a></li>                        </ul>
+                          <li><Link className="dropdown-item" to="/equipo">Equipo</Link></li>
+                          <li><Link className="dropdown-item" to="/manifiesto">Nuestro manifiesto</Link></li>                        
+                        </ul>
                       </li>
                       <li className="nav-item">
                         <Link className="nav-link" to="/centroestudios">Centro de estudios</Link>
@@ -101,8 +103,10 @@ export const AppRouter = () => {
           <Switch>
             <Route exact path="/" component={ Home }/>  
             <Route exact path="/quienessomos" component={ QuieneSomos }/>
+            <Route exact path="/equipo" component={ QuieneSomos }/>
+            <Route exact path="/manifiesto" component={ QuieneSomos }/>
             <Route exact path="/centroestudios" component={ CentroEstudios }/>
-            <Route exact path="/sumate" component={ sumate }/>
+            <Route exact path="/sumate" component={ Sumate }/>
             <Route exact path="/extractivismo" component={ Extractivismo }/>
             <Route exact path="/cambioclimatico" component={ CambioClimatico }/>
             <Route exact path="/ambienteurbano" component={ AmbienteUrbano }/>

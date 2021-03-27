@@ -17,12 +17,12 @@ export const Carrusel = () => {
             className=" carousel slide carousel-fade"
             data-bs-ride="carousel"
           >
-            <div class="carousel-indicators">
+            <div className="carousel-indicators">
               <button
                 type="button"
                 data-bs-target="#carouselFirst"
                 data-bs-slide-to="0"
-                class="active"
+                className="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>

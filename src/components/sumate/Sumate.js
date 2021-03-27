@@ -1,10 +1,20 @@
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMapMarkerAlt, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import Contacto from "../contacto/Contacto";
+import { useSpring , animated } from 'react-spring';
 
-export const sumate = () => {
+export const Sumate = () => {
+
+  
+  const showIn = useSpring({
+    from: { opacity : 0, marginBottom: -500},
+    opacity: 1, marginBottom: 0,
+    config: {delay: 2000, duration:1500}
+  });
+
   return (
-    <div className="container-fluid contactomain">
+    <animated.div style={showIn} className="container-fluid contactomain">
       <section className="container-fluid sumatemain">
         <div className="sumate">
           <h3>¡Sumate!</h3>
@@ -44,46 +54,10 @@ export const sumate = () => {
             ></iframe>
           </div>
         </div>
-        <form className="col-sm">
-          <div className="form-floating mb-3">
-            <input
-              className="form-control"
-              id="floatingInput"
-              type="text"
-              placeholder="Nombre"
-            />
-            <label htmlFor="floatingInput">Nombre</label>
+          <div className="col-sm">
+            <Contacto/>
           </div>
-          <div className="form-floating mb-3">
-            <input
-              className="form-control"
-              id="floatingInput"
-              type="text"
-              placeholder="Apellido"
-            />
-            <label htmlFor="floatingInput">Apellido</label>
-          </div>
-          <div className="form-floating mb-3">
-            <input
-              className="form-control"
-              id="floatingInput"
-              type="email"
-              placeholder="email@ejemplo.com"
-            />
-            <label htmlFor="floatingInput">Email</label>
-          </div>
-          <div className=" form-floating mb-3">
-            <textarea
-              className="escribinos form-control"
-              id="floatingInput"
-              type="text-area"
-              placeholder="Escribinos"
-            ></textarea>
-            <label htmlFor="floatingInput">Escribinos...</label>
-          </div>
-          <button className="btn btn-secondary">Enviar</button>
-        </form>
       </section>
-    </div>
+    </animated.div>
   );
 };

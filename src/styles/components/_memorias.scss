@@ -10,8 +10,11 @@
         list-style: none;
         li {
             margin-bottom: 1rem;
+            border-radius: 5px;
             a{
+                background-color: $senary;
                 display: inline;
+                font-weight: bold;
             }
         }
     }

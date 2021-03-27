@@ -1,9 +1,18 @@
 import React from 'react'
 import berta from '../../assets/img/bertacaceres.png'
+import { useSpring , animated } from 'react-spring';
 
 export const CentroEstudios = () => {
+
+    const fadeIn = useSpring({
+        from: { opacity : 0, marginRight: -500},
+        opacity: 1, marginRight: 0,
+        config: {delay: 1000, duration: 1000}
+      });
+
+
     return (
-        <section className="container-fluid institutomain">
+        <animated.section style={fadeIn} className="container-fluid institutomain">
             <div className=" instituto">
                 <h3>
                     Centro de estudios Berta Cáceres
@@ -38,6 +47,6 @@ export const CentroEstudios = () => {
             <div className="container imgcont">
                 <img src={berta} alt="Logo Centro de estudios Berta Caceres"/>
             </div>
-        </section>
+        </animated.section>
     )
 }

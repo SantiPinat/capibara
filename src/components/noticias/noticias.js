@@ -6,7 +6,7 @@ export const Noticias = () => {
 
     return (
         <section className="widgettweet">
-            <h2>Ultimas noticias en <a href="https://twitter.com/CapibaraNDS" rel="noopener noreferrer">CAPIBARA</a> </h2>
+            <h2>Ultimas noticias en <a href="https://twitter.com/CapibaraNDS" target="_blank" rel="noopener noreferrer">CAPIBARA</a> </h2>
             <div className="noticias">
                 <div className="tweet">
                     <TwitterTimelineEmbed

@@ -5,10 +5,18 @@ import memo2016 from '../../assets/docs/Memoria2016CAPIBARANDS.pdf'
 import memo2017 from '../../assets/docs/Memoria2017CAPIBARANDS.pdf'
 import memo2018 from '../../assets/docs/Memoria2018CAPIBARANDS.pdf'
 import memo2019 from '../../assets/docs/Memoria2019CAPIBARANDS.pdf'
+import { useSpring ,animated } from '@react-spring/web'
 
 export const Memorias = () => {
+
+    const loopin = useSpring({
+      from: { opacity : 0, marginTop: -500},
+      opacity: 1, marginTop: 0,
+      config: {delay: 1500, duration:1500}
+    });
+
     return (
-        <div className="container memorias">
+        <animated.div style={loopin} className="container memorias">
             <h4>Memorias de <span>Capibara</span></h4>
             <ul className="list-group m-4">
                 <li>
@@ -31,6 +39,6 @@ export const Memorias = () => {
                 </li>
             </ul>
 
-        </div>
+        </animated.div>
     )
 }
