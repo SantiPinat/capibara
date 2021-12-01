@@ -21,7 +21,7 @@ export const QuieneSomos = () => {
         <div className="container textoquienes">
           <h3>Quiénes somos</h3>
           <p>
-            El colectivo <span className="capi">CAPIBARA</span> se conforma como
+            <span className="capi">CAPIBARA</span> se conforma como
             un espacio integrado por abogadas, abogados y estudiantes de la
             carrera de abogacía de la ciudad de Santa Fe cuyo objetivo consiste
             en contribuir a la tutela de los derechos de la naturaleza en

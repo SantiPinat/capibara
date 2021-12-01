@@ -5,7 +5,7 @@ export const CambioClimatico = () => {
     <div className="container lineas" >
       <h4>Cambio climático </h4>
       <p>
-        Desde hace algunas décadas,el cambio climático se ha consolidado como el
+        Desde hace algunas décadas, el cambio climático se ha consolidado como el
         desafío más importante al que se enfrenta la humanidad, no solo por ser
         un fenómeno con causas netamente antrópicas sino también en razón de
         estar a prueba, hoy más que nunca, nuestro sentido de la

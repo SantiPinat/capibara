@@ -89,6 +89,7 @@ main {
             font-size: 2rem;
             margin-bottom: 4rem;
             padding-top: 3rem;
+
             @include media(xs){
                 padding-top: 11rem;
                 margin-top: 3rem;
@@ -107,7 +108,7 @@ main {
             line-height: 2rem;
             margin: 0rem 1rem;
             padding-right: 5rem;
-            text-align: left;
+            text-align: justify;
             span {
                 @include capi;
             }

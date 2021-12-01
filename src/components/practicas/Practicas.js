@@ -11,7 +11,7 @@ export const Practicas = () => {
     return (
             <article className="practices">
               <div className="container">
-                <h2>Integrantes de nuestras practicas</h2>
+                <h2>Práctica profesional final en Capibara</h2>
                 <div className="card-columns"> 
                   <div className="row justify-content-center row-cols-auto ">
                     <div className="col">

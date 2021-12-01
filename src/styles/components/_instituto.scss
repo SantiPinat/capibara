@@ -14,6 +14,7 @@
         p {
             font-size: 1rem;
             letter-spacing: 1px;
+            text-align: justify;
         }
         @include media(xs){
             padding: 1rem;
@@ -26,6 +27,7 @@
         color: $primary;
         font-size: 1rem;
         padding: 2rem 2rem 2rem 15rem;
+        text-align: justify;
         @include media(xs){
             padding: 7rem 1rem 1rem;
         }

@@ -22,7 +22,6 @@ export const Home = () => {
                 <Carrusel/>
                 <Historia/>
                 <Bertacaceres/>
-                <Convenios/>
                 <Noticias/>
             </animated.div>
         </main>

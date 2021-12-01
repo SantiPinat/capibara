@@ -24,6 +24,7 @@ import { Investigacion } from '../lineasdeaccion/Investigacion';
 import { Educacion } from '../lineasdeaccion/Educacion';
 import { Documentos } from '../publicaciones/Documentos';
 import { Memorias } from '../publicaciones/Memorias';
+import { Audiovisuales } from '../publicaciones/Audiovisuales';
 
 
 export const AppRouter = () => {
@@ -53,8 +54,8 @@ export const AppRouter = () => {
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><Link className="dropdown-item" to="/quienessomos">Quienes somos</Link></li>
-                          <li><Link className="dropdown-item" to="/equipo">Equipo</Link></li>
-                          <li><Link className="dropdown-item" to="/manifiesto">Nuestro manifiesto</Link></li>                        
+                          <li><Link className="dropdown-item" to="/quienessomos#equipo">Equipo</Link></li>
+                          <li><Link className="dropdown-item" to="/quienessomos#manifiesto">Nuestro manifiesto</Link></li>                        
                         </ul>
                       </li>
                       <li className="nav-item">
@@ -68,7 +69,7 @@ export const AppRouter = () => {
                           <li><Link className="dropdown-item" to="/extractivismo">Extractivismo</Link></li>
                           <li><Link className="dropdown-item" to="/cambioclimatico">Cambio climático</Link></li>
                           <li><Link className="dropdown-item" to="/ambienteurbano">Ambiente urbano</Link></li>
-                          <li><Link className="dropdown-item" to="/derechos">Derechos de la naturaleza y biodiversidad</Link></li>
+                          <li><Link className="dropdown-item" to="/derechos">Derechos de la naturaleza</Link></li>
                         </ul>
                       </li>
                       <li className="nav-item dropdown">
@@ -79,7 +80,6 @@ export const AppRouter = () => {
                           <li><Link className="dropdown-item" to="/litigioestrategico">Litigio estratégico</Link></li>
                           <li><Link className="dropdown-item" to="/legislacion">Legislación y políticas públicas</Link></li>
                           <li><Link className="dropdown-item" to="/vinculacion">Vinculación institucional</Link></li>
-                          <li><Link className="dropdown-item" to="/investigacion">Invesstigación para la incedencia</Link></li>
                           <li><Link className="dropdown-item" to="/educacion">Educación ambiental y capacitación</Link></li>
                         </ul>
                       </li>
@@ -90,6 +90,7 @@ export const AppRouter = () => {
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><Link className="dropdown-item" to="/memorias">Memorias</Link></li>
                           <li><Link className="dropdown-item" to="/documentos">Documentos</Link></li>
+                          <li><Link className="dropdown-item" to="/audiovisuales">Audiovisuales</Link></li>
                         </ul>
                       </li>
                       <li className="nav-item">
@@ -102,9 +103,10 @@ export const AppRouter = () => {
   
           <Switch>
             <Route exact path="/" component={ Home }/>  
-            <Route exact path="/quienessomos" component={ QuieneSomos }/>
-            <Route exact path="/equipo" component={ QuieneSomos }/>
-            <Route exact path="/manifiesto" component={ QuieneSomos }/>
+            <Route exact path="/home" component={ Home }/>  
+            <Route path="/quienessomos" component={ QuieneSomos }/>
+            <Route  path="/equipo#equipo" component={ QuieneSomos }/>
+            <Route  path="/manifiesto#manifiesto" component={ QuieneSomos }/>
             <Route exact path="/centroestudios" component={ CentroEstudios }/>
             <Route exact path="/sumate" component={ Sumate }/>
             <Route exact path="/extractivismo" component={ Extractivismo }/>
@@ -118,6 +120,7 @@ export const AppRouter = () => {
             <Route exact path="/educacion" component={ Educacion }/>
             <Route exact path="/documentos" component={ Documentos }/>
             <Route exact path="/memorias" component={ Memorias }/>
+            <Route exact path="/audiovisuales" component={ Audiovisuales }/>
           </Switch>
 
           <Footer />

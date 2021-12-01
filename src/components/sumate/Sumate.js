@@ -34,9 +34,9 @@ export const Sumate = () => {
         </div>
       </section>
       <section className="row contacto" id="contacto">
-        <h3>Contacto</h3>
+        <h3>Conectate</h3>
         <div className="col-sm">
-          <h2>Capibara NDS</h2>
+          <h2>Capibara</h2>
           <hr />
           <p>
             <FontAwesomeIcon icon={faEnvelope} className="icon" />

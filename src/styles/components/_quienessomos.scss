@@ -17,6 +17,7 @@ section {
             }
             p {
                 letter-spacing: 2px;
+                text-align: justify;
                 .capi {
                     @include capi;
                 }

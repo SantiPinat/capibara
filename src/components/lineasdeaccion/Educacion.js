@@ -1,5 +1,4 @@
 import React from "react";
-import { Practicas } from "../practicas/Practicas";
 
 export const Educacion = () => {
   return (
@@ -16,8 +15,6 @@ export const Educacion = () => {
           que le rodea, respetando su derecho a existir.
         </p>
       </div>
-      <Practicas />
-
     </secton>
 
   );

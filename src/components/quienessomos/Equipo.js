@@ -12,7 +12,7 @@ import Valeria from "../../assets/img/Equipo/ValeriaBerros.jpeg";
 
 export const Equipo = () => {
     return (
-        <div>      <article id="equipo" className="equipo container-fluid">
+        <div><article id="equipo" className="equipo container-fluid">
         <h2>
           Equipo de <span>capibara</span>{" "}
         </h2>
@@ -32,13 +32,13 @@ export const Equipo = () => {
           <li className="card">
             <img className="card-img-top" src={Dabel} alt="Foto de Dabel Leandro Franco"/>
             <div className="card-body">
-              <h5 className="card-title">Dabel Leando Franco</h5>
+              <h5 className="card-title">Dabel Leandro Franco</h5>
             </div>
           </li>
           <li className="card">
             <img className="card-img-top" src={Gretel} alt="Foto de Gretel Feljenmeyer"/>
             <div className="card-body">
-              <h5 className="card-title">Gretel Feljenmeyer</h5>
+              <h5 className="card-title">Gretel Falkenmeyer</h5>
             </div>
           </li>
           <li className="card">
@@ -80,6 +80,6 @@ export const Equipo = () => {
         </ul>
       </article>
             
-        </div>
+    </div>
     )
 }
