@@ -16,6 +16,7 @@ $nonary: #839192;
 }
 @mixin lines {
         color: $primary;
+        text-align: justify;
         h4 {
             font-size: 2rem;
             font-weight: bold;

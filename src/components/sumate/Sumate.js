@@ -14,7 +14,7 @@ export const Sumate = () => {
   });
 
   return (
-    <animated.div style={showIn} className="container-fluid contactomain">
+    <animated.div style={showIn} className="container contactomain">
       <section className="container-fluid sumatemain">
         <div className="sumate">
           <h3>¡Sumate!</h3>
@@ -24,7 +24,6 @@ export const Sumate = () => {
             creciendo, formando y representando el derecho ambiental en nuestro
             pais.
           </p>
-          <hr />
           <em className="depo">
             <p>Titular: AC C P JUR CAPIBARA NAT DER S</p>
             <p>Nro. Cuenta: Cuenta Corriente $ 191-340-023323/0 </p>
@@ -33,11 +32,8 @@ export const Sumate = () => {
           </em>
         </div>
       </section>
-      <section className="row contacto" id="contacto">
-        <h3>Conectate</h3>
-        <div className="col-sm">
-          <h2>Capibara</h2>
-          <hr />
+      <section className="container contacto" id="contacto">
+        <h3>Conectate con <h2>Capibara</h2></h3>
           <p>
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
             Email: capibara.nds@gmail.com
@@ -53,10 +49,7 @@ export const Sumate = () => {
               tabIndex="0"
             ></iframe>
           </div>
-        </div>
-          <div className="col-sm">
             <Contacto/>
-          </div>
       </section>
     </animated.div>
   );

@@ -20,7 +20,6 @@ import { LitigioEstrategico } from '../lineasdeaccion/LitigioEstrategico';
 import { Derechos } from '../lineastematicas/Derechos';
 import { Legislacion } from '../lineasdeaccion/Legislacion';
 import { Vinculacion } from '../lineasdeaccion/Vinculacion';
-import { Investigacion } from '../lineasdeaccion/Investigacion';
 import { Educacion } from '../lineasdeaccion/Educacion';
 import { Documentos } from '../publicaciones/Documentos';
 import { Memorias } from '../publicaciones/Memorias';
@@ -103,6 +102,7 @@ export const AppRouter = () => {
   
           <Switch>
             <Route exact path="/" component={ Home }/>  
+            <Route exact path="/capibara" component={ Home }/>  
             <Route exact path="/home" component={ Home }/>  
             <Route path="/quienessomos" component={ QuieneSomos }/>
             <Route  path="/equipo#equipo" component={ QuieneSomos }/>
@@ -116,7 +116,6 @@ export const AppRouter = () => {
             <Route exact path="/litigioestrategico" component={ LitigioEstrategico }/>
             <Route exact path="/legislacion" component={ Legislacion }/>
             <Route exact path="/vinculacion" component={ Vinculacion }/>
-            <Route exact path="/investigacion" component={ Investigacion }/>
             <Route exact path="/educacion" component={ Educacion }/>
             <Route exact path="/documentos" component={ Documentos }/>
             <Route exact path="/memorias" component={ Memorias }/>
