@@ -4,12 +4,8 @@ import LitigioImg from '../../assets/img/Accion/litigioestrategico.jpg';
 export const LitigioEstrategico = () => {
   return (
     <div className="container lineas">
-      <div className="row">
-        <div className="col">
-          <img src={ LitigioImg } alt="imagen de litigio estretegico" className="img-fluid"/>
-
-        </div>
-        <div className="col">
+      <div className="row  mb-3">
+        <div className="col-sm-12 col-md-6">
           <h4>Litigio estratégico</h4>
           <p>
             {" "}
@@ -19,6 +15,10 @@ export const LitigioEstrategico = () => {
             naturaleza, con el objeto de fortalecer tanto la justicia ambiental como
             la ecológica.
           </p>
+
+        </div>
+        <div className="col-sm-12 col-md-6">
+          <img src={ LitigioImg } alt="imagen de litigio estretegico" className="img-fluid img-thumbnail" />
 
         </div>
       </div>

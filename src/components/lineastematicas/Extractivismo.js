@@ -4,9 +4,9 @@ import ExtractivismoImg from '../../assets/img/Tematicas/extractivismo.jpg';
 export const Extractivismo = () => {
   return (
     <div className="container lineas">
-      <div className="row">
+      <div className="row mb-3">
 
-        <div className="col">
+        <div className="col-sm-12 col-md-6">
           <h4>Extractivismo</h4>
           <p>
             El extractivismo consiste en la expropiación de importantes volúmenes de
@@ -17,8 +17,8 @@ export const Extractivismo = () => {
           </p>
 
         </div>
-        <div className="col">
-          <img src={ ExtractivismoImg } alt="imagen de extractivismo" className="img-fluid"/>
+        <div className="col-sm-12 col-md-6">
+          <img src={ ExtractivismoImg } alt="imagen de extractivismo" className="img-fluid img-thumbnail"/>
           
         </div>
       </div>

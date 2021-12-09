@@ -4,12 +4,8 @@ import LegislacionImg from '../../assets/img/Accion/legislacionypolpcas.jpg';
 export const Legislacion = () => {
   return (
     <div className="container lineas">
-      <div className="row">
-        <div className="col" >
-          <img src={ LegislacionImg } alt="imagen de legislacion y politicas" className="img-fluid"/>
-
-        </div>
-        <div className="col">
+      <div className="row  mb-3">
+        <div className="col-sm-12 col-md-6">
 
           <h4>Legislación y políticas públicas</h4>
           <p>
@@ -21,6 +17,10 @@ export const Legislacion = () => {
             considera el valor propio del mundo natural. Asimismo, participamos
             activamente en los procesos de debate legislativos en curso.{" "}
           </p>
+        </div>
+        <div className="col-sm-12 col-md-6" >
+          <img src={ LegislacionImg } alt="imagen de legislacion y politicas" className="img-fluid img-thumbnail" />
+
         </div>
       </div>
       

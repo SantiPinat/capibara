@@ -4,8 +4,8 @@ import AmbienteImg from '../../assets/img/Tematicas/ambienteurbano.jpg';
 export const AmbienteUrbano = () => {
   return (
     <div className="container lineas">
-      <div className="row">
-        <div className="col">
+      <div className="row  mb-3">
+        <div className="col-sm-12 col-md-6" >
           <h4>Ambiente urbano</h4>
           <p>
             El ambiente urbano intenta construir una mirada de la ciudad en la que
@@ -16,8 +16,8 @@ export const AmbienteUrbano = () => {
           </p>
           
         </div>
-        <div className="col">
-          <img src={ AmbienteImg } alt="imagen de ambiente urbano" className="img-fluid"/>
+        <div className="col-sm-12 col-md-6">
+          <img src={ AmbienteImg } alt="imagen de ambiente urbano" className="img-fluid img-thumbnail"/>
 
         </div>
 

@@ -5,11 +5,8 @@ export const Educacion = () => {
   return (
     <secton>
       <div className="lineas container">
-        <div className="row">
-          <div className="col">
-            <img src={ EducacionImg } alt="imagen de educacion ambiental" className="img-fluid"/>
-          </div>
-          <div className="col">
+        <div className="row mb-3">
+          <div className="col-sm-12 col-md-6">
             <h4>Educación ambiental y capacitaciones</h4>
             <p>
               Consideramos que la educación ambiental es un acto político, basado en
@@ -20,6 +17,9 @@ export const Educacion = () => {
               una eco-ciudadanía capaz de lograr una convivencia solidaria con todo lo
               que le rodea, respetando su derecho a existir.
             </p>
+          </div>
+          <div className="col-sm-12 col-md-6">
+            <img src={ EducacionImg } alt="imagen de educacion ambiental" className="img-fluid img-thumbnail"/>
           </div>
         </div>
         

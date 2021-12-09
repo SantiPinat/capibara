@@ -5,13 +5,9 @@ import { Practicas } from "../practicas/Practicas";
 export const Vinculacion = () => {
   return (
     <section>
-      <div className="container lineas">
-        <div className="row">
-          <div className="col">
-            <img src={ VinculacionImg } alt="imagen de educacion ambiental" className="img-fluid"/>
-
-          </div>
-          <div className="col">
+      <div className="container lineas  mb-3">
+        <div className="row  mb-3">
+          <div className="col-sm-12 col-md-6">
 
             <h4>Vinculación institucional</h4>
             <p>
@@ -23,10 +19,14 @@ export const Vinculacion = () => {
               que se relacionan con nuestras áreas temáticas.{" "}
             </p>
           </div>
+          <div className="col-sm-12 col-md-6">
+            <img src={ VinculacionImg } alt="imagen de educacion ambiental" className="img-fluid img-thumbnail"/>
+
+          </div>
         </div>
         
       </div>
-        <Practicas />
+      <Practicas />
     </section>
   );
 };

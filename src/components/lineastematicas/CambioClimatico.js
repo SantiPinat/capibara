@@ -4,8 +4,8 @@ import CambioclimaticoImg from '../../assets/img/Tematicas/cambioclimatico.jpg';
 export const CambioClimatico = () => {
   return (
     <div className="container lineas" >
-      <div className="row">
-        <div className="col">
+      <div className="row  mb-3">
+        <div className="col-sm-12 col-md-6">
           <h4>Cambio climático </h4>
           <p>
             Desde hace algunas décadas, el cambio climático se ha consolidado como el
@@ -19,8 +19,8 @@ export const CambioClimatico = () => {
           </p>
 
         </div>        
-        <div className="col">
-          <img src={ CambioclimaticoImg } alt="imagen de cambio climático" className="img-fluid"/>
+        <div className="col-sm-12 col-md-6">
+          <img src={ CambioclimaticoImg } alt="imagen de cambio climático" className="img-fluid img-thumbnail"/>
 
         </div>
 
