@@ -28,7 +28,7 @@ export const Sumate = () => {
             <p>Titular: AC C P JUR CAPIBARA NAT DER S</p>
             <p>Nro. Cuenta: Cuenta Corriente $ 191-340-023323/0 </p>
             <p>CBU: 19103406 - 55034002332300</p>
-            <p>Banco Credicop</p>
+            <p>Banco Credicoop</p>
           </em>
         </div>
       </section>
@@ -36,7 +36,7 @@ export const Sumate = () => {
         <h3>Conectate con <h2>Capibara</h2></h3>
           <p>
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
-            Email: capibara.nds@gmail.com
+            Email: info@capibara.org.ar
           </p>
           <p>
             <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
@@ -47,6 +47,7 @@ export const Sumate = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54358.327677591165!2d-60.73063578012973!3d-31.623020488720293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1612109817523!5m2!1ses-419!2sar"
               aria-hidden="false"
               tabIndex="0"
+              title="mapasantafe"
             ></iframe>
           </div>
             <Contacto/>

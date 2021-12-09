@@ -1,5 +1,4 @@
 import React from 'react'
-import { Convenios } from '../convenios/Convenios'
 import { Carrusel } from '../carrusel/Carrusel'
 import { Historia } from '../historia/Historia'
 import { Noticias } from '../noticias/noticias'

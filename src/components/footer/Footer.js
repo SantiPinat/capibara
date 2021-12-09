@@ -58,7 +58,7 @@ export const Footer = () => {
           2021
         </h3>
         <p>Santa Fe - Argentina</p>
-        <p>info@capibara.org.ar</p>
+        <a className="milink" href="mailto:info@capibara.org.ar">info@capibara.org.ar</a>
         <p>
           Developed with <FontAwesomeIcon icon={faHeart} /> by{" "}
           <a

@@ -32,7 +32,7 @@ export const AppRouter = () => {
         <Router>
         <div>
           <div className="AppRouter__main">
-            <nav className="container-fluid fixed-top navbar navbar-expand-lg" >
+            <nav className="container-fluid navbar navbar-expand-lg" >
                     <Link className="navbar-brand" to="/">
                         <img src={logocapibara} alt="logo de capipabara nds" height="100px"/>
                     </Link>
@@ -53,8 +53,8 @@ export const AppRouter = () => {
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><Link className="dropdown-item" to="/quienessomos">Quienes somos</Link></li>
-                          <li><Link className="dropdown-item" to="/quienessomos#equipo">Equipo</Link></li>
-                          <li><Link className="dropdown-item" to="/quienessomos#manifiesto">Nuestro manifiesto</Link></li>                        
+                          <li><a className="dropdown-item" href="/quienessomos#equipo">Equipo</a></li>
+                          <li><a className="dropdown-item" href="/quienessomos#manifiesto">Nuestro manifiesto</a></li>                        
                         </ul>
                       </li>
                       <li className="nav-item">
