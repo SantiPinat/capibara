@@ -106,8 +106,6 @@ export const AppRouter = () => {
             <Route exact path="/capibara" component={ Home }/>  
             <Route exact path="/home" component={ Home }/>  
             <Route exact path="/quienessomos" component={ QuieneSomos }/>
-            <Route exact path="/quienessomos#equipo" component={ QuieneSomos }/>
-            <Route exact path="/quienessomos#manifiesto" component={ QuieneSomos }/>
             <Route exact path="/centroestudios" component={ CentroEstudios }/>
             <Route exact path="/sumate" component={ Sumate }/>
             <Route exact path="/extractivismo" component={ Extractivismo }/>
@@ -121,7 +119,7 @@ export const AppRouter = () => {
             <Route exact path="/documentos" component={ Documentos }/>
             <Route exact path="/memorias" component={ Memorias }/>
             <Route exact path="/audiovisuales" component={ Audiovisuales }/>
-            <Route path='*' component={ NotFound }/>
+            <Route redirect path='*' component={ NotFound }/>
           </Switch>
 
           <Footer />
